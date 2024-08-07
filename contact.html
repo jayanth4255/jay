@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Delight Coffee Cafe</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="jsstyles.css">
+    <script defer src="contact.js"></script>
+    <script>
+function myFunction() {
+  alert("The form was submitted Successfully");
+}
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Cafe Delight </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="background: url('contact.jpg') no-repeat center center/cover;">
+        <div class="hero-content">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you!</p>
+        </div>
+    </section>
+
+    <section class="contact py-5" style="background-image: radial-gradient(white , rgb(159, 72, 72)); border-radius: 25px;">
+        <div class="container">
+            <h2 class="text-center">Get in Touch</h2>
+            <p class="text-center mb-5">Fill out the form below and we'll get back to you as soon as possible.</p>
+            <form id="contactForm" class="needs-validation" onsubmit="myFunction()">
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                        <div class="invalid-feedback">
+                            Please provide your name.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid email.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                        <div class="invalid-feedback">
+                            Please provide a message.
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cafe Name. All rights reserved.</p>
+
+            <p>Address: 8HF6+55J, BN Reddy Rd, Sriram Nagar Colony, Balaji Colony Phase 2, Hastinapuram, Hyderabad,
+                Telangana 500070</p>
+            <p>Phone: 939-876-4230</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/cafecoffeedelight/"><img src="facebook.jpg" height="40px" width="40px"></a>
+                <a href="https://www.instagram.com/cafedelight_007/"><img src="insta.jpg" height="40px" width="40px"></a>
+                <a href="https://x.com/cafecoffeeday?lang=en"><img src="twitter.jpg" height="40px" width="40px"></a>
+                <a href="https://maps.app.goo.gl/7yexZYvmL73SpDr47"><img src="map.jpg" height="40px" width="40px"></a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
